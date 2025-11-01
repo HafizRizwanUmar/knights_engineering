@@ -18,7 +18,7 @@ import {
 const COMPANY_PHONE_NUMBER = '+971555508499'; // International format
 const COMPANY_EMAIL = 'info@knights.com';
 const COMPANY_ADDRESS = 'P.O. Box: 23416, Sharjah, United Arab Emirates';
-const COMPANY_LOGO_URL = 'https://i.ibb.co/3s6y0mD/knights-logo.png';
+const COMPANY_LOGO_URL = 'images/logo.png';
 const COMPANY_WHATSAPP_NUMBER = '971555508499'; // No '+' or '00'. Just country code + number.
 const SOCIAL_LINKS = {
   facebook: 'https://facebook.com',
@@ -495,14 +495,18 @@ const projectsData = [
 ];
 
 const clientLogos = [
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=ADNOC',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=ENOC',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=Trafigura',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=VOPAK',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=EMDAD',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=SHELL',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=TechCorp',
-  'https://via.placeholder.com/150x60/ffffff/cccccc?text=InfraCo',
+  'images/logo4.png',
+  'imgages/logo2.png',
+  'images/logo3.jpeg',
+  'images/logo1.jpeg',
+  'imgages/logo2.png',
+  'images/logo3.jpeg',
+  'images/logo4.png',
+  'imgages/logo2.png',
+  'images/logo3.jpeg',
+  'images/logo1.jpeg',
+  'imgages/logo2.png',
+  'images/logo3.jpeg',
 ];
 
 // --- ANIMATION VARIANTS ---
@@ -1339,7 +1343,7 @@ const AboutPage = () => {
   return (
     <div className="font-body">
       {/* Page Header */}
-      <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('https://picsum.photos/seed/team welding/1920/400')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
+      <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('images/hero1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-heading text-5xl lg:text-6xl font-bold">{t('about.pageTitle')}</h1>
           <p className="text-xl mt-4">{t('about.pageSubtitle')}</p>
@@ -1385,7 +1389,7 @@ const AboutPage = () => {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src="https://picsum.photos/seed/welding team/600/500"
+                src="images/hero4.jpg"
                 alt={t('about.sectionTitle')}
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -1538,7 +1542,7 @@ const ProjectsPage = () => {
   return (
     <div className="font-body">
       {/* Page Header */}
-      <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('https://picsum.photos/seed/tank construction site/1920/400')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
+      <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('images/hero3.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-heading text-5xl lg:text-6xl font-bold">{t('projects.pageTitle')}</h1>
           <p className="text-xl mt-4">{t('projects.pageSubtitle')}</p>
@@ -1618,7 +1622,7 @@ const ContactPage = () => {
   return (
     <div className="font-body text-left rtl:text-right">
       {/* Page Header */}
-      <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('https://picsum.photos/seed/modern office/1920/400')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
+      <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('images/hero2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="font-heading text-5xl lg:text-6xl font-bold">{t('contact.pageTitle')}</h1>
           <p className="text-xl mt-4">{t('contact.pageSubtitle')}</p>
