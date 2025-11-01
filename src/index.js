@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css'; // Your main css file
-import './i18n.js'; // Import the i18n configuration
 
 // Simple loader component
 const Loader = () => (
