@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.jsx';
+import './index.css'; // Your main css file
+import './i18n.js'; // Import the i18n configuration
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+// Simple loader component
+const Loader = () => (
+  <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-primary"></div>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Suspense fallback={<Loader />}>
+      <App />
+    </Suspense>
+  </React.StrictMode>,
+);
