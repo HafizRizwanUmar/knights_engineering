@@ -15,11 +15,11 @@ import {
 
 // --- COMPANY CONFIGURATION ---
 // !! IMPORTANT: Update these values !!
-const COMPANY_PHONE_NUMBER = '+97165343100'; // International format
+const COMPANY_PHONE_NUMBER = '+971555508499'; // International format
 const COMPANY_EMAIL = 'info@knights.com';
 const COMPANY_ADDRESS = 'P.O. Box: 23416, Sharjah, United Arab Emirates';
 const COMPANY_LOGO_URL = 'https://i.ibb.co/3s6y0mD/knights-logo.png';
-const COMPANY_WHATSAPP_NUMBER = '97165343100'; // No '+' or '00'. Just country code + number.
+const COMPANY_WHATSAPP_NUMBER = '971555508499'; // No '+' or '00'. Just country code + number.
 const SOCIAL_LINKS = {
   facebook: 'https://facebook.com',
   twitter: 'https://twitter.com',
@@ -408,17 +408,17 @@ const navLinks = [
 
 const heroSlides = [
   {
-    img: 'https://images.unsplash.com/photo-1581078426770-0d00105638a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80', // oil refinery
+    img: 'images/hero1.jpg', // oil refinery
     titleKey: 'hero.slide1Title',
     subtitleKey: 'hero.slide1Subtitle',
   },
   {
-    img: 'https://images.unsplash.com/photo-1611002214172-593e62867d7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80', // storage tank
+    img: 'images/hero4.jpg', // storage tank
     titleKey: 'hero.slide2Title',
     subtitleKey: 'hero.slide2Subtitle',
   },
   {
-    img: 'https://images.unsplash.com/photo-1563383133-72909415695a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80', // tank farm
+    img: 'images/hero3.jpg', // tank farm
     titleKey: 'hero.slide3Title',
     subtitleKey: 'hero.slide3Subtitle',
   },
@@ -1237,7 +1237,7 @@ const HomePage = () => {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1571400262568-111bf4a93868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" // refinery sunset
+                src="images/hero2.jpg" // refinery sunset
                 alt="Refinery Site"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
