@@ -2,6 +2,9 @@ import React, { useState, useEffect, Fragment, createContext, useContext } from 
 import { BrowserRouter, Routes, Route, Link, NavLink, Outlet, useLocation, useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence, useSpring, useTransform } from 'framer-motion';
 
+// --- SEO Component ---
+import SEO from './SEO.jsx'; // <-- IMPORT SEO
+
 // --- ICONS ---
 import { 
   FaPhone, FaEnvelope, FaMapMarkerAlt, FaBars, FaTimes, FaChevronRight, 
@@ -19,8 +22,7 @@ const COMPANY_PHONE_NUMBER = '+971 55 5508499'; // International format (from le
 const COMPANY_EMAIL = 'knights.engg@gmail.com'; // (from letterhead)
 const COMPANY_ADDRESS = 'P.O. Box: 38003, Sajjah Industrial Area, Sharjah - U.A.E.'; // (from letterhead)
 // --- LOGO UPDATE ---
-// I've updated this to point to the new full logo image you provided.
-// Please save your new logo (image_5202a2.png) to this path: public/images/knights_full_logo.png
+// Using the full logo path as requested.
 const COMPANY_LOGO_URL = 'images/knights.png'; 
 // --- END LOGO UPDATE ---
 const COMPANY_WHATSAPP_NUMBER = '971555508499'; // No '+' or '00'. Just country code + number.
@@ -379,7 +381,7 @@ const LanguageProvider = ({ children }) => {
   );
 };
 
-const useTranslation = () => useContext(LanguageContext);
+export const useTranslation = () => useContext(LanguageContext); // <-- EXPORTED
 
 // --- DATA CONSTANTS (UPGRADED FOR NICHE) ---
 
@@ -1194,6 +1196,13 @@ const HomePage = () => {
 
   return (
     <div className="font-body">
+      {/* --- ADD SEO COMPONENT --- */}
+      <SEO
+        title={t('nav.home')}
+        description="Leading EPC contractor in the UAE for API 650 storage tank fabrication, design, pipeline works, and turnkey storage terminals for the oil and gas industry."
+      />
+      {/* --- END SEO COMPONENT --- */}
+    
       <HeroSlider />
 
       {/* About Summary Section */}
@@ -1327,6 +1336,13 @@ const AboutPage = () => {
 
   return (
     <div className="font-body">
+      {/* --- ADD SEO COMPONENT --- */}
+      <SEO
+        title={t('about.pageTitle')}
+        description={t('about.sectionSubtitle')}
+      />
+      {/* --- END SEO COMPONENT --- */}
+
       {/* Page Header */}
       <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('images/hero1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -1422,6 +1438,13 @@ const ExpertisePage = () => {
   const { t } = useTranslation();
   return (
     <div className="font-body">
+      {/* --- ADD SEO COMPONENT --- */}
+      <SEO
+        title={t('expertise.pageTitle')}
+        description={t('expertise.pageSubtitle')}
+      />
+      {/* --- END SEO COMPONENT --- */}
+
       {/* Page Header */}
       <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('https://picsum.photos/seed/large storage tanks/1920/400')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -1469,6 +1492,12 @@ const ExpertiseDetailPage = () => {
   if (!item) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
+        {/* --- ADD SEO COMPONENT --- */}
+        <SEO
+          title={t('expertiseDetail.notFound')}
+          description={t('expertiseDetail.notFoundSubtitle')}
+        />
+        {/* --- END SEO COMPONENT --- */}
         <h1 className="font-heading text-4xl font-bold text-dark mb-4">{t('expertiseDetail.notFound')}</h1>
         <p className="font-body text-lg text-light mb-8">{t('expertiseDetail.notFoundSubtitle')}</p>
         <Button onClick={() => navigate('/expertise')} variant="primary">
@@ -1478,10 +1507,21 @@ const ExpertiseDetailPage = () => {
     );
   }
 
+  const pageTitle = t(item.titleKey);
+  const pageDescription = t(item.descriptionKey);
+
   const BackIcon = locale === 'ar' ? FaArrowRight : FaArrowLeft;
 
   return (
     <div className="font-body">
+      {/* --- ADD SEO COMPONENT (DYNAMIC) --- */}
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        ogImage={item.detailImg}
+      />
+      {/* --- END SEO COMPONENT --- */}
+
       {/* Page Header */}
       <section className="py-32 bg-dark text-white relative" style={{ backgroundImage: `url(${item.detailImg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -1527,6 +1567,13 @@ const ProjectsPage = () => {
   const { t } = useTranslation();
   return (
     <div className="font-body">
+      {/* --- ADD SEO COMPONENT --- */}
+      <SEO
+        title={t('projects.pageTitle')}
+        description={t('projects.pageSubtitle')}
+      />
+      {/* --- END SEO COMPONENT --- */}
+
       {/* Page Header */}
       <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('images/hero3.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -1605,6 +1652,13 @@ const ContactPage = () => {
 
   return (
     <div className="font-body text-left rtl:text-right">
+      {/* --- ADD SEO COMPONENT --- */}
+      <SEO
+        title={t('contact.pageTitle')}
+        description={t('contact.pageSubtitle')}
+      />
+      {/* --- END SEO COMPONENT --- */}
+
       {/* Page Header */}
       <section className="py-24 bg-dark text-white relative" style={{ backgroundImage: "url('images/hero2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(0,0,0,0.6)' }}>
         <div className="container mx-auto px-4 text-center relative z-10">
