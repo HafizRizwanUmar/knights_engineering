@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         // Re-themeing as requested
-        'primary': '#d71920',      // User's requested red as the main accent
+        'primary': '#838508',      // User's requested red as the main accent
         'secondary': '#C9A03A',   // Sophisticated gold for Arab touch
         'dark': '#1A1A1A',        // Charcoal black for text and dark elements
         'light': '#555555',       // Soft gray for body text

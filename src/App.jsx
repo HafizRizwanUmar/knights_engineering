@@ -14,11 +14,15 @@ import {
 } from 'react-icons/fa';
 
 // --- COMPANY CONFIGURATION ---
-// !! IMPORTANT: Update these values !!
-const COMPANY_PHONE_NUMBER = '+971555508499'; // International format
-const COMPANY_EMAIL = 'info@knights.com';
-const COMPANY_ADDRESS = 'P.O. Box: 23416, Sharjah, United Arab Emirates';
-const COMPANY_LOGO_URL = 'images/logo.png';
+// !! IMPORTANT: Updated with new info from letterhead !!
+const COMPANY_PHONE_NUMBER = '+971 55 5508499'; // International format (from letterhead)
+const COMPANY_EMAIL = 'knights.engg@gmail.com'; // (from letterhead)
+const COMPANY_ADDRESS = 'P.O. Box: 38003, Sajjah Industrial Area, Sharjah - U.A.E.'; // (from letterhead)
+// --- LOGO UPDATE ---
+// I've updated this to point to the new full logo image you provided.
+// Please save your new logo (image_5202a2.png) to this path: public/images/knights_full_logo.png
+const COMPANY_LOGO_URL = 'images/knights.png'; 
+// --- END LOGO UPDATE ---
 const COMPANY_WHATSAPP_NUMBER = '971555508499'; // No '+' or '00'. Just country code + number.
 const SOCIAL_LINKS = {
   facebook: 'https://facebook.com',
@@ -47,7 +51,7 @@ const translations = {
       langToggle: 'العربية',
     },
     hero: {
-      slide1Title: 'Knights Engineering',
+      slide1Title: 'Knights Eng. Services L.L.C.SP', // <-- UPDATED from letterhead
       slide1Subtitle: 'Leading in Oil & Gas Tank Fabrication & Services.',
       slide2Title: 'Storage Solutions',
       slide2Subtitle: 'Delivering complex tank projects with precision and quality.',
@@ -56,7 +60,7 @@ const translations = {
       explore: 'Explore More',
     },
     home: {
-      aboutTitle: 'About Knights Engineering',
+      aboutTitle: 'About Knights Eng. Services', // <-- UPDATED
       aboutSubtitle: 'With a modest beginning in the UAE, Knights Engineering has become a leader in oil and gas storage solutions, offering complete services from tank design and fabrication to maintenance and repair.',
       aboutBody: 'Our commitment to delivering projects on time, within budget, and to the highest API & ASME standards is demonstrated by our track record and motivated team.',
       aboutButton: 'Learn More About Us',
@@ -109,47 +113,37 @@ const translations = {
       sectionSubtitle: 'Knights Engineering offers specialized solutions for the oil and gas storage industry, from new fabrication to maintenance and repair.',
       readMore: 'READ MORE',
     },
-    // New Tank Service Names
+    // --- UPDATED SERVICES ---
     expertiseServices: {
-      tankFabricationTitle: 'Tank Fabrication (API 650)',
-      tankFabricationDesc: 'Full-range fabrication of storage tanks, adhering strictly to API 650 standards.',
-      tankDesignTitle: 'Tank Design & Engineering',
-      tankDesignDesc: 'In-house design & engineering for tanks, foundations, and terminals.',
-      tankRepairTitle: 'Tank Repair & Maintenance',
-      tankRepairDesc: 'Comprehensive repair, maintenance, and modification services for existing tanks.',
-      customFabricationTitle: 'Custom Steel Fabrication',
-      customFabricationDesc: 'State-of-the-art fabrication of custom steel components, structures, and skids.',
-      civilWorksTitle: 'Foundation & Civil Works',
-      civilWorksDesc: 'Construction of tank foundations, bund walls, and related civil infrastructure.',
-      mepWorksTitle: 'Tank Terminal (MEP)',
-      mepWorksDesc: 'Piping, instrumentation, and electrical works for complete tank terminals.',
+      tankFabricationTitle: 'Storage Tank Fabrication (API 650)',
+      tankFabricationDesc: 'Precision fabrication of fixed and floating roof tanks adhering to API 650/620 standards.',
+      tankDesignTitle: 'Tank & Terminal Design',
+      tankDesignDesc: 'Complete engineering and design for tanks and terminals using advanced software (E-TANK, COMPRESS).',
+      pipelineWorkTitle: 'Process & Pipeline Works',
+      pipelineWorkDesc: 'Fabrication, installation, and testing of process piping (ASME B31.3) and pipelines.',
+      storageTerminalTitle: 'Turnkey Storage Terminals (EPC)',
+      storageTerminalDesc: 'End-to-end EPC solutions for building complete storage terminals, from civil works to commissioning.',
     },
     expertiseDetail: {
       backButton: 'Back to All Services',
       notFound: 'Service not found.',
       notFoundSubtitle: 'The service you are looking for does not exist.',
-      // New Detail Descriptions
-      tankFabrication: "Our core expertise lies in the complete fabrication of Aboveground Storage Tanks (ASTs) adhering to API 650 and API 620 standards. We manage the entire process, from material procurement and plate cutting to welding, assembly, and testing. Our state-of-the-art facilities and certified welders ensure the highest quality for fixed roof, floating roof, and custom-designed tanks.",
-      tankDesign: "Our in-house design and engineering team utilizes the latest software, including E-TANK and COMPRESS, to deliver robust and cost-effective solutions. We provide detailed calculations, fabrication drawings, and finite element analysis (FEA) for tanks, pressure vessels, and their foundations, ensuring full compliance with international codes.",
-      tankRepair: "We are specialists in the inspection, repair, and maintenance of existing storage tanks. Our services include tank jacking, bottom plate replacement, shell repairs, roof modifications (e.g., converting fixed to floating), and nozzle additions. We work to minimize downtime and extend the operational life of your assets safely and efficiently.",
-      customFabrication: "Beyond tanks, our steel fabrication division handles a wide range of custom projects. This includes pressure vessels (ASME U Stamp), process skids, pipe racks, and structural steel for industrial plants. Our CWB/AWS certified team delivers precision-engineered products tailored to your exact specifications.",
-      civilWorks: "A stable tank requires a solid foundation. We provide complete civil and foundation works, including soil analysis, ring beam foundations, raft foundations, and pile foundations. We also construct bund walls, containment areas, and related terminal infrastructure to meet all environmental and safety standards.",
-      mepWorks: "We deliver complete Mechanical, Electrical, and Piping (MEP) solutions for tank terminals. This includes interconnecting pipe works, fire protection systems, foam systems, instrumentation, and electrical hook-ups. Our integrated approach ensures all components work seamlessly as a complete system.",
+      // --- UPDATED SERVICE DETAILS ---
+      tankFabrication: "Our core expertise is the shop and site fabrication of Aboveground Storage Tanks (ASTs) as per API 650 & API 620. We handle all materials, including carbon steel and stainless steel, for various tank types like Fixed Cone Roof, Internal/External Floating Roof, and Dome Roof tanks. Our certified welders and stringent quality control (NDT, hydro-testing) ensure maximum safety and durability.",
+      tankDesign: "Our in-house engineering team provides comprehensive design solutions. Using advanced software like E-TANK, COMPRESS, and AutoCAD, we deliver detailed calculations, Finite Element Analysis (FEA), and fabrication drawings for tanks, foundations, and terminal layouts. All designs comply with international standards (API, ASME) and local regulations.",
+      pipelineWork: "We specialize in the fabrication, installation, and testing of industrial piping systems. This includes process piping within terminals (ASME B31.3), utility piping (firewater, foam), and cross-country pipelines. Our services cover welding, NDT, hydro-testing, and commissioning to ensure a leak-free and efficient system.",
+      storageTerminal: "We deliver complete Turnkey (EPC) solutions for bulk liquid storage terminals. Our service integrates all disciplines: from initial design and civil works (foundations, bund walls) to tank fabrication, piping, and full MEP & Instrumentation (firefighting systems, loading arms, automation). We manage the entire project from concept to commissioning, delivering a fully operational facility.",
     },
     projects: {
       pageTitle: 'Our Projects',
       pageSubtitle: 'A Showcase of Our Successfully Completed Work',
       sectionTitle: 'Project Portfolio',
       sectionSubtitle: 'Take a look at our successfully completed projects in the oil and gas storage sector.',
-      // New Project Names
-      proj1: 'Storage Terminals',
-      proj2: 'Pressure Vessels (ASME)',
-      proj3: 'Tank Farm Piping',
-      proj4: 'Floating Roof Tanks',
-      proj5: 'Cryogenic Tanks (LNG)',
-      proj6: 'Marine Loading Arms',
-      proj7: 'Tank Repair Projects',
-      proj8: 'Skid Mounted Systems',
+      // --- UPDATED PROJECTS ---
+      proj1: 'Millennium Lubricants Terminal',
+      proj1Location: 'Ras Al Khaimah, UAE',
+      proj2: 'Black Water Treatment Project',
+      proj2Location: 'Sharjah, UAE',
     },
     contact: {
       pageTitle: 'Contact Us',
@@ -172,24 +166,24 @@ const translations = {
       infoTitle: 'Contact Information',
       infoSubtitle: "We're open for any suggestion or just to have a chat. Feel free to reach out to us during our office hours.",
       infoAddressTitle: 'Our Address',
-      infoAddressDesc: COMPANY_ADDRESS,
+      infoAddressDesc: COMPANY_ADDRESS, // Auto-updated
       infoCallTitle: 'Call Us',
-      infoCallDesc: COMPANY_PHONE_NUMBER,
+      infoCallDesc: COMPANY_PHONE_NUMBER, // Auto-updated
       infoEmailTitle: 'Email Us',
-      infoEmailDesc: COMPANY_EMAIL,
+      infoEmailDesc: COMPANY_EMAIL, // Auto-updated
     },
     footer: {
       about: 'Knights Engineering is a dynamic and fast-growing company specializing in end-to-end solutions for oil and gas storage tanks.',
       links: 'Quick Links',
       contact: 'Contact Company',
-      contactAddress: COMPANY_ADDRESS,
-      contactPhone: COMPANY_PHONE_NUMBER,
-      contactEmail: COMPANY_EMAIL,
+      contactAddress: COMPANY_ADDRESS, // Auto-updated
+      contactPhone: COMPANY_PHONE_NUMBER, // Auto-updated
+      contactEmail: COMPANY_EMAIL, // Auto-updated
       newsletter: 'Newsletter',
       newsletterDesc: 'Get updates about our latest projects and innovations.',
       newsletterPlaceholder: 'Your Email Address',
       follow: 'Follow Us',
-      copyright: 'Knights Engineering. All Rights Reserved.',
+      copyright: 'Knights Eng. Services L.L.C.SP. All Rights Reserved.', // <-- UPDATED
     },
     chat: {
       button: 'Chat with Us',
@@ -210,7 +204,7 @@ const translations = {
       langToggle: 'English',
     },
     hero: {
-      slide1Title: 'نايتس الهندسية',
+      slide1Title: 'الفرسان للخدمات الهندسية ذ.م.م.ش.ش. و', // <-- UPDATED from letterhead
       slide1Subtitle: 'رواد تصنيع وخدمات خزانات النفط والغاز.',
       slide2Title: 'حلول التخزين',
       slide2Subtitle: 'تنفيذ مشاريع الخزانات المعقدة بدقة وجودة عالية.',
@@ -219,7 +213,7 @@ const translations = {
       explore: 'اكتشف المزيد',
     },
     home: {
-      aboutTitle: 'عن نايتس الهندسية',
+      aboutTitle: 'عن الفرسان للخدمات الهندسية', // <-- UPDATED
       aboutSubtitle: 'من بداية متواضعة في الإمارات، أصبحت نايتس الهندسية رائدة في حلول تخزين النفط والغاز، مقدمة خدمات متكاملة من تصميم وتصنيع الخزانات إلى الصيانة والإصلاح.',
       aboutBody: 'التزامنا بتسليم المشاريع في الوقت المحدد، ضمن الميزانية، وبأعلى معايير API و ASME، يظهره سجل إنجازاتنا وفريقنا المتحمس.',
       aboutButton: 'اعرف المزيد عنا',
@@ -272,54 +266,44 @@ const translations = {
       sectionSubtitle: 'تقدم نايتس الهندسية حلولاً متخصصة لصناعة تخزين النفط والغاز، من التصنيع الجديد إلى الصيانة والإصلاح.',
       readMore: 'اقرأ المزيد',
     },
-    // New Tank Service Names (Arabic)
+    // --- UPDATED SERVICES (Arabic) ---
     expertiseServices: {
-      tankFabricationTitle: 'تصنيع الخزانات (API 650)',
-      tankFabricationDesc: 'تصنيع متكامل لخزانات التخزين، مع الالتزام الصارم بمعايير API 650.',
-      tankDesignTitle: 'تصميم وهندسة الخزانات',
-      tankDesignDesc: 'تصميم وهندسة داخلية للخزانات، الأساسات، والمحطات.',
-      tankRepairTitle: 'إصلاح وصيانة الخزانات',
-      tankRepairDesc: 'خدمات إصلاح وصيانة وتعديل شاملة للخزانات القائمة.',
-      customFabricationTitle: 'تصنيع فولاذي مخصص',
-      customFabricationDesc: 'تصنيع متطور لمكونات وهياكل ومنصات فولاذية مخصصة.',
-      civilWorksTitle: 'الأعمال المدنية والأساسات',
-      civilWorksDesc: 'إنشاء أساسات الخزانات، جدران الاحتواء، والبنية التحتية المدنية ذات الصلة.',
-      mepWorksTitle: 'أعمال كهروميكانيكية (محطات)',
-      mepWorksDesc: 'أعمال الأنابيب، الأجهزة، والأعمال الكهربائية لمحطات الخزانات المتكاملة.',
+      tankFabricationTitle: 'تصنيع خزانات التخزين (API 650)',
+      tankFabricationDesc: 'تصنيع دقيق لخزانات السقف الثابت والعائم المتوافقة مع معايير API 650/620.',
+      tankDesignTitle: 'تصميم الخزانات والمحطات',
+      tankDesignDesc: 'تصميم وهندسة متكاملة للخزانات والمحطات باستخدام برامج متقدمة (E-TANK, COMPRESS).',
+      pipelineWorkTitle: 'أعمال الأنابيب وخطوط الأنابيب',
+      pipelineWorkDesc: 'تصنيع وتركيب واختبار أنابيب المعالجة (ASME B31.3) وخطوط الأنابيب.',
+      storageTerminalTitle: 'محطات تخزين متكاملة (EPC)',
+      storageTerminalDesc: 'حلول تسليم مفتاح (EPC) لبناء محطات تخزين كاملة، من الأعمال المدنية إلى التشغيل.',
     },
     expertiseDetail: {
       backButton: 'العودة إلى كل الخدمات',
       notFound: 'الخدمة غير موجودة.',
       notFoundSubtitle: 'الخدمة التي تبحث عنها غير موجودة.',
-      // New Detail Descriptions (Arabic)
-      tankFabrication: "تكمن خبرتنا الأساسية في التصنيع الكامل لخزانات التخزين السطحية (ASTs) المتوافقة مع معايير API 650 و API 620. ندير العملية برمتها، من شراء المواد وقطع الألواح إلى اللحام والتجميع والاختبار. تضمن مرافقنا الحديثة واللحامون المعتمدون أعلى مستويات الجودة للخزانات ذات السقف الثابت والسقف العائم والمصممة خصيصًا.",
-      tankDesign: "يستخدم فريق التصميم والهندسة الداخلي لدينا أحدث البرامج، بما في ذلك E-TANK و COMPRESS، لتقديم حلول قوية وفعالة من حيث التكلفة. نقدم حسابات مفصلة ورسومات تصنيع وتحليل العناصر المحدودة (FEA) للخزانات وأوعية الضغط وأساساتها، مما يضمن الامتثال الكامل للمعايير الدولية.",
-      tankRepair: "نحن متخصصون في فحص وإصلاح وصيانة خزانات التخزين القائمة. تشمل خدماتنا رفع الخزانات (jacking)، واستبدال الألواح السفلية، وإصلاحات الهيكل، وتعديلات السقف (مثل تحويل السقف الثابت إلى عائم)، وإضافة الفوهات. نعمل على تقليل وقت التوقف عن العمل وإطالة العمر التشغيلي لأصولك بأمان وكفاءة.",
-      customFabrication: "إلى جانب الخزانات، يتعامل قسم تصنيع الصلب لدينا مع مجموعة واسعة من المشاريع المخصصة. ويشمل ذلك أوعية الضغط (ASME U Stamp)، والمنصات (skids)، ورفوف الأنابيب، والصلب الإنشائي للمصانع الصناعية. يقدم فريقنا المعتمد من CWB/AWS منتجات مصممة بدقة ومصممة خصيصًا لمواصفاتك الدقيقة.",
-      civilWorks: "الخزان المستقر يتطلب أساسًا متينًا. نحن نقدم أعمالًا مدنية وأساسات كاملة، بما في ذلك تحليل التربة، وأساسات الحلقة، والأساسات الخرسانية، وأساسات الركائز. كما نقوم ببناء جدران الاحتواء ومناطق الاحتواء والبنية التحتية للمحطة ذات الصلة لتلبية جميع المعايير البيئية ومعايير السلامة.",
-      mepWorks: "نقدم حلولاً ميكانيكية وكهربائية وأنابيب (MEP) كاملة لمحطات الخزانات. ويشمل ذلك أعمال الأنابيب المترابطة، وأنظمة الحماية من الحرائق، وأنظمة الرغوة، والأجهزة، والتوصيلات الكهربائية. يضمن نهجنا المتكامل أن تعمل جميع المكونات بسلاسة كنظام كامل.",
+      // --- UPDATED SERVICE DETAILS (Arabic) ---
+      tankFabrication: "خبرتنا الأساسية هي تصنيع الخزانات السطحية (ASTs) في الموقع والمصنع وفقًا لمعايير API 650 و API 620. نتعامل مع جميع المواد، بما في ذلك الفولاذ الكربوني والفولاذ المقاوم للصدأ، لمختلف أنواع الخزانات مثل السقف المخروطي الثابت، والسقف العائم الداخلي/الخارجي، وخزانات السقف المقبب. يضمن لحامونا المعتمدون ومراقبة الجودة الصارمة (الاختبارات غير الإتلافية، الاختبار المائي) أقصى درجات الأمان والمتانة.",
+      tankDesign: "يقدم فريقنا الهندسي الداخلي حلول تصميم شاملة. باستخدام برامج متقدمة مثل E-TANK و COMPRESS و AutoCAD، نقدم حسابات مفصلة، وتحليل العناصر المحدودة (FEA)، ورسومات تصنيع للخزانات والأساسات وتخطيطات المحطات. تتوافق جميع التصميمات مع المعايير الدولية (API, ASME) واللوائح المحلية.",
+      pipelineWork: "نحن متخصصون في تصنيع وتركيب واختبار أنظمة الأنابيب الصناعية. ويشمل ذلك أنابيب المعالجة داخل المحطات (ASME B31.3)، وأنابيب الخدمات (مياه الإطفاء، الرغوة)، وخطوط الأنابيب عبر البلاد. تغطي خدماتنا اللحام، والاختبارات غير الإتلافية، والاختبار المائي، والتشغيل لضمان نظام فعال وخالٍ من التسرب.",
+      storageTerminal: "نقدم حلولاً متكاملة (EPC) بنظام تسليم المفتاح لمحطات تخزين السوائل السائبة. تدمج خدمتنا جميع التخصصات: من التصميم الأولي والأعمال المدنية (الأساسات، جدران الاحتواء) إلى تصنيع الخزانات، والأنابيب، والأعمال الكهروميكانيكية (MEP) والأجهزة الدقيقة (أنظمة مكافحة الحرائق، أذرع التحميل، الأتمتة). ندير المشروع بأكمله من الفكرة إلى التشغيل، لتقديم منشأة تعمل بكامل طاقتها.",
     },
     projects: {
       pageTitle: 'مشاريعنا',
       pageSubtitle: 'استعراض لأعمالنا المنجزة بنجاح',
       sectionTitle: 'ملف المشاريع',
       sectionSubtitle: 'ألق نظرة على مشاريعنا المنجزة بنجاح في قطاع تخزين النفط والغاز.',
-      // New Project Names (Arabic)
-      proj1: 'محطات تخزين',
-      proj2: 'أوعية ضغط (ASME)',
-      proj3: 'أنابيب مزارع الخزانات',
-      proj4: 'خزانات السقف العائم',
-      proj5: 'خزانات التبريد (LNG)',
-      proj6: 'أذرع تحميل بحرية',
-      proj7: 'مشاريع إصلاح خزانات',
-      proj8: 'أنظمة محمولة (Skids)',
+      // --- UPDATED PROJECTS (Arabic) ---
+      proj1: 'محطة ميلينيوم للزيوت',
+      proj1Location: 'رأس الخيمة، الإمارات',
+      proj2: 'مشروع معالجة المياه السوداء',
+      proj2Location: 'الشارقة، الإمارات',
     },
     contact: {
       pageTitle: 'اتصل بنا',
       pageSubtitle: 'تواصل مع فريقنا',
       formTitle: 'أرسل رسالة أو اطلب عرض سعر',
       formName: 'الاسم الكامل',
-      formEmail: 'البريد الإلكتروني',
+      formEmail: 'البريد الإلكتروني', // <-- Fixed typo
       formPhone: 'رقم الهاتف',
       formService: 'الخدمة المطلوبة',
       formServicePlaceholder: 'اختر خدمة...',
@@ -335,30 +319,31 @@ const translations = {
       infoTitle: 'معلومات الاتصال',
       infoSubtitle: 'نحن منفتحون على أي اقتراح أو لمجرد الدرشة. لا تتردد في التواصل معنا خلال ساعات العمل.',
       infoAddressTitle: 'عنواننا',
-      infoAddressDesc: COMPANY_ADDRESS,
+      infoAddressDesc: COMPANY_ADDRESS, // Auto-updated
       infoCallTitle: 'اتصل بنا',
-      infoCallDesc: COMPANY_PHONE_NUMBER,
+      infoCallDesc: COMPANY_PHONE_NUMBER, // Auto-updated
       infoEmailTitle: 'راسلنا عبر البريد',
-      infoEmailDesc: COMPANY_EMAIL,
+      infoEmailDesc: COMPANY_EMAIL, // Auto-updated
     },
     footer: {
       about: 'نايتس الهندسية شركة ديناميكية سريعة النمو متخصصة في الحلول المتكاملة لخزانات تخزين النفط والغاز.',
       links: 'روابط سريعة',
       contact: 'اتصل بالشركة',
-      contactAddress: COMPANY_ADDRESS,
-      contactPhone: COMPANY_PHONE_NUMBER,
-      contactEmail: COMPANY_EMAIL,
+      contactAddress: COMPANY_ADDRESS, // Auto-updated
+      contactPhone: COMPANY_PHONE_NUMBER, // Auto-updated
+      contactEmail: COMPANY_EMAIL, // Auto-updated
       newsletter: 'النشرة الإخبارية',
       newsletterDesc: 'احصل على تحديثات حول أحدث مشاريعنا وابتكاراتنا.',
       newsletterPlaceholder: 'بريدك الإلكتروني',
       follow: 'تابعنا',
-      copyright: 'نايتس الهندسية. جميع الحقوق محفوظة.',
+      copyright: 'الفرسان للخدمات الهندسية ذ.م.م.ش.ش. و. جميع الحقوق محفوظة.', // <-- UPDATED
     },
     chat: {
       button: 'تحدث معنا',
     }
   },
 };
+
 
 const LanguageContext = createContext();
 
@@ -424,88 +409,75 @@ const heroSlides = [
   },
 ];
 
-// --- UPGRADED EXPERTISE DATA (NICHE FOCUSED) ---
+// --- UPDATED EXPERTISE DATA (4 SERVICES) ---
 const expertiseData = [
   { 
     slug: 'tank-fabrication',
     titleKey: 'expertiseServices.tankFabricationTitle', 
     descriptionKey: 'expertiseServices.tankFabricationDesc', 
     icon: <FaWarehouse size={24} />, 
-    img: 'https://picsum.photos/seed/tankfabrication/600/400',
-    detailImg: 'https://picsum.photos/seed/tankfabrication-detail/1920/600',
-    detailDescriptionKey: 'expertiseDetail.tankFabrication' // <-- ERROR FIX: Relative key
+    img: 'images/service1.jpg',
+    detailImg: 'images/service1.jpg',
+    detailDescriptionKey: 'expertiseDetail.tankFabrication'
   },
   { 
     slug: 'tank-design-engineering',
     titleKey: 'expertiseServices.tankDesignTitle', 
     descriptionKey: 'expertiseServices.tankDesignDesc', 
     icon: <FaProjectDiagram size={24} />, 
-    img: 'https://picsum.photos/seed/engineeringblueprint/600/400',
-    detailImg: 'https://picsum.photos/seed/design-detail/1920/600',
-    detailDescriptionKey: 'expertiseDetail.tankDesign' // <-- ERROR FIX: Relative key
+    img: 'images/service2.jpg',
+    detailImg: 'images/service2.jpg',
+    detailDescriptionKey: 'expertiseDetail.tankDesign'
   },
   { 
-    slug: 'tank-repair-maintenance',
-    titleKey: 'expertiseServices.tankRepairTitle', 
-    descriptionKey: 'expertiseServices.tankRepairDesc', 
-    icon: <FaHammer size={24} />, 
-    img: 'https://picsum.photos/seed/tankmaintenance/600/400',
-    detailImg: 'https://picsum.photos/seed/offshore-detail/1920/600',
-    detailDescriptionKey: 'expertiseDetail.tankRepair' // <-- ERROR FIX: Relative key
-  },
-  { 
-    slug: 'custom-steel-fabrication',
-    titleKey: 'expertiseServices.customFabricationTitle', 
-    descriptionKey: 'expertiseServices.customFabricationDesc', 
-    icon: <FaCogs size={24} />, 
-    img: 'https://picsum.photos/seed/welding/600/400',
-    detailImg: 'https://picsum.photos/seed/steel-detail/1920/600',
-    detailDescriptionKey: 'expertiseDetail.customFabrication' // <-- ERROR FIX: Relative key
-  },
-  { 
-    slug: 'foundation-civil-works',
-    titleKey: 'expertiseServices.civilWorksTitle', 
-    descriptionKey: 'expertiseServices.civilWorksDesc', 
-    icon: <FaHardHat size={24} />, 
-    img: 'https://picsum.photos/seed/concretefoundation/600/400',
-    detailImg: 'https://picsum.photos/seed/civil-detail/1920/600',
-    detailDescriptionKey: 'expertiseDetail.civilWorks' // <-- ERROR FIX: Relative key
-  },
-  { 
-    slug: 'tank-terminal-mep',
-    titleKey: 'expertiseServices.mepWorksTitle', 
-    descriptionKey: 'expertiseServices.mepWorksDesc', 
+    slug: 'pipeline-work',
+    titleKey: 'expertiseServices.pipelineWorkTitle', 
+    descriptionKey: 'expertiseServices.pipelineWorkDesc', 
     icon: <FaTools size={24} />, 
-    img: 'https://picsum.photos/seed/industrialpipes/600/400',
-    detailImg: 'https://picsum.photos/seed/mep-detail/1920/600',
-    detailDescriptionKey: 'expertiseDetail.mepWorks' // <-- ERROR FIX: Relative key
+    img: 'images/service3.jpg',
+    detailImg: 'images/service3.jpg',
+    detailDescriptionKey: 'expertiseDetail.pipelineWork'
+  },
+  { 
+    slug: 'storage-terminal-buildup',
+    titleKey: 'expertiseServices.storageTerminalTitle', 
+    descriptionKey: 'expertiseServices.storageTerminalDesc', 
+    icon: <FaHardHat size={24} />, 
+    img: 'images/service4.jpg',
+    detailImg: 'images/service4.jpg',
+    detailDescriptionKey: 'expertiseDetail.storageTerminal'
   },
 ];
 // --- END UPGRADED DATA ---
 
+// --- UPDATED PROJECTS DATA (2 PROJECTS) ---
 const projectsData = [
-  { img: 'https://picsum.photos/seed/storageterminal/400/300', titleKey: 'projects.proj1' },
-  { img: 'https://picsum.photos/seed/pressurevessel/400/300', titleKey: 'projects.proj2' },
-  { img: 'https://picsum.photos/seed/tankpiping/400/300', titleKey: 'projects.proj3' },
-  { img: 'https://picsum.photos/seed/floatingroof/400/300', titleKey: 'projects.proj4' },
-  { img: 'https://picsum.photos/seed/cryotank/400/300', titleKey: 'projects.proj5' },
-  { img: 'https://picsum.photos/seed/loadingarm/400/300', titleKey: 'projects.proj6' },
-  { img: 'https://picsum.photos/seed/tankrepair/400/300', titleKey: 'projects.proj7' },
-  { img: 'https://picsum.photos/seed/skid/400/300', titleKey: 'projects.proj8' },
+  { 
+    img: 'images/project1.jpg', 
+    titleKey: 'projects.proj1', 
+    locationKey: 'projects.proj1Location' 
+  },
+  { 
+    img: 'images/project2.jpg', 
+    titleKey: 'projects.proj2', 
+    locationKey: 'projects.proj2Location' 
+  },
 ];
+// --- END UPGRADED DATA ---
+
 
 const clientLogos = [
   'images/logo4.png',
-  'imgages/logo2.png',
+  'images/logo2.png', // <-- FIXED TYPO
   'images/logo3.jpeg',
   'images/logo1.jpeg',
-  'imgages/logo2.png',
+  'images/logo2.png', // <-- FIXED TYPO
   'images/logo3.jpeg',
   'images/logo4.png',
-  'imgages/logo2.png',
+  'images/logo2.png', // <-- FIXED TYPO
   'images/logo3.jpeg',
   'images/logo1.jpeg',
-  'imgages/logo2.png',
+  'images/logo2.png', // <-- FIXED TYPO
   'images/logo3.jpeg',
 ];
 
@@ -617,7 +589,7 @@ const ExpertiseCard = ({ item }) => {
 };
 
 /**
- * Upgraded Project Card (i18n)
+ * --- UPDATED Project Card (i18n & Location) ---
  */
 const ProjectCard = ({ project }) => {
   const { t } = useTranslation();
@@ -633,9 +605,16 @@ const ProjectCard = ({ project }) => {
         className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-300 ease-in-out flex items-end p-6">
-        <h3 className="font-heading text-white text-2xl font-semibold transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-          {t(project.titleKey)}
-        </h3>
+        <div className="transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+          <h3 className="font-heading text-white text-2xl font-semibold">
+            {t(project.titleKey)}
+          </h3>
+          {/* --- NEWLY ADDED LOCATION --- */}
+          <p className="text-primary-light text-sm font-medium text-gray-200 flex items-center gap-2 mt-1">
+            <FaMapMarkerAlt size={12} />
+            {t(project.locationKey)}
+          </p>
+        </div>
       </div>
     </motion.div>
   );
@@ -935,7 +914,9 @@ const Header = () => {
       <nav className="relative py-4 px-4 md:px-8 lg:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={COMPANY_LOGO_URL} alt="Knights Engineering Logo" className="h-10 lg:h-12 w-auto" />
+          {/* The logo URL is pulled from COMPANY_LOGO_URL */}
+          {/* --- ALT TAG UPDATED --- */}
+          <img src={COMPANY_LOGO_URL} alt="Knights Eng. Services Logo" className="h-10 lg:h-12 w-auto" />
         </Link>
 
         {/* Desktop Nav Links */}
@@ -1010,7 +991,9 @@ const Footer = () => {
           {/* Column 1: About */}
           <div className="space-y-4">
              <Link to="/" className="flex-shrink-0 mb-4 inline-block">
-               <img src={COMPANY_LOGO_URL} alt="Knights Engineering Logo" className="h-10 w-auto" style={{ filter: 'brightness(0) invert(1) grayscale(1) contrast(100)' }} />
+               {/* The logo URL is pulled from COMPANY_LOGO_URL and styled for the footer */}
+               {/* --- ALT TAG UPDATED --- */}
+               <img src={COMPANY_LOGO_URL} alt="Knights Eng. Services Logo" className="h-10 w-auto" style={{ filter: 'brightness(0) invert(1) grayscale(1) contrast(100)' }} />
              </Link>
             <p className="text-sm">
               {t('footer.about')}
@@ -1256,7 +1239,7 @@ const HomePage = () => {
       {/* --- NEW SECTION --- */}
       <StatsSection />
 
-      {/* Expertise Summary Section */}
+      {/* Expertise Summary Section --- UPDATED GRID --- */}
       <motion.section 
         className="py-16 lg:py-24 bg-gray-50 bg-geometric-pattern"
         variants={sectionVariants}
@@ -1269,8 +1252,9 @@ const HomePage = () => {
             title={t('home.expertiseTitle')}
             subtitle={t('home.expertiseSubtitle')}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {expertiseData.slice(0, 3).map((item) => (
+          {/* --- UPDATED to show 4 services --- */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {expertiseData.slice(0, 4).map((item) => (
               <ExpertiseCard key={item.slug} item={item} />
             ))}
           </div>
@@ -1282,7 +1266,7 @@ const HomePage = () => {
         </div>
       </motion.section>
       
-      {/* Projects Summary Section */}
+      {/* Projects Summary Section --- UPDATED GRID --- */}
       <motion.section 
         className="py-16 lg:py-24 bg-off-white"
         variants={sectionVariants}
@@ -1295,8 +1279,9 @@ const HomePage = () => {
             title={t('home.projectsTitle')}
             subtitle={t('home.projectsSubtitle')}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-            {projectsData.slice(0, 4).map((project) => (
+          {/* --- UPDATED to show 2 projects --- */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto">
+            {projectsData.slice(0, 2).map((project) => (
               <ProjectCard key={project.titleKey} project={project} />
             ))}
           </div>
@@ -1445,7 +1430,7 @@ const ExpertisePage = () => {
         </div>
       </section>
       
-      {/* Expertise Grid Section */}
+      {/* Expertise Grid Section --- UPDATED GRID --- */}
       <motion.section 
         className="py-16 lg:py-24 bg-off-white bg-geometric-pattern"
         variants={sectionVariants}
@@ -1458,7 +1443,8 @@ const ExpertisePage = () => {
             title={t('expertise.sectionTitle')}
             subtitle={t('expertise.sectionSubtitle')}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {/* --- UPDATED to show 4 services --- */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             {expertiseData.map((item) => (
               <ExpertiseCard key={item.slug} item={item} />
             ))}
@@ -1549,7 +1535,7 @@ const ProjectsPage = () => {
         </div>
       </section>
       
-      {/* Projects Grid Section */}
+      {/* Projects Grid Section --- UPDATED GRID --- */}
       <motion.section 
         className="py-16 lg:py-24 bg-white"
         variants={sectionVariants}
@@ -1562,12 +1548,10 @@ const ProjectsPage = () => {
             title={t('projects.sectionTitle')}
             subtitle={t('projects.sectionSubtitle')}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          {/* --- UPDATED to show 2 projects prominently --- */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
             {projectsData.map((project) => (
               <ProjectCard key={project.titleKey} project={project} />
-            ))}
-            {projectsData.slice(0, 4).map((project, index) => ( 
-              <ProjectCard key={`dup-${index}`} project={{...project, img: `${project.img}?dup=${index}`}} />
             ))}
           </div>
         </div>
@@ -1663,6 +1647,7 @@ const ContactPage = () => {
                     <select id="service" value={formData.service} onChange={handleInputChange} required className="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary bg-gray-50 font-body">
                       <option value="">{t('contact.formServicePlaceholder')}</option>
                       <option value="general">{t('contact.formServiceGeneral')}</option>
+                      {/* --- UPDATED to show new services --- */}
                       {expertiseData.map(item => (
                         <option key={item.slug} value={item.slug}>{t(item.titleKey)}</option>
                       ))}
@@ -1747,6 +1732,7 @@ const ContactPage = () => {
                 <div>
                   <h4 className="font-semibold text-lg text-dark font-heading">{t('contact.infoCallTitle')}</h4>
                   <p className="font-body text-light group-hover:text-dark">{t('contact.infoCallDesc')}</p>
+
                 </div>
               </a>
               <a href={`mailto:${t('contact.infoEmailDesc')}`} className="flex items-start space-x-4 rtl:space-x-reverse p-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 group">
@@ -1760,7 +1746,7 @@ const ContactPage = () => {
               {/* Embedded Map */}
               <div className="w-full h-64 bg-gray-200 rounded-lg shadow-inner overflow-hidden">
                 <iframe
-                  src="http://googleusercontent.com/maps.google.com/3" // Changed seed to avoid cache
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.319119690623!2d55.53986481501217!3d25.32707798383501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f5f5f5f5f5f%3A0x0!2sSajaa%20Industrial%20Area!5e0!3m2!1sen!2sae!4v1667399860682!5m2!1sen!2sae" // Placeholder for Sajjah Industrial Area
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
