@@ -1809,7 +1809,7 @@ const ContactPage = () => {
               {/* Embedded Map */}
               <div className="w-full h-64 bg-gray-200 rounded-lg shadow-inner overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.319119690623!2d55.53986481501217!3d25.32707798383501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f5f5f5f5f5f%3A0x0!2sSajaa%20Industrial%20Area!5e0!3m2!1sen!2sae!4v1667399860682!5m2!1sen!2sae" // Placeholder for Sajjah Industrial Area
+src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3612.4242029116667!2d55.9662131753794!3d25.12134547775986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDA3JzE2LjgiTiA1NcKwNTgnMDcuNiJF!5e0!3m2!1sen!2s!4v1762159117761!5m2!1sen!2s" 
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
