@@ -18,12 +18,12 @@ import {
 
 // --- COMPANY CONFIGURATION ---
 // !! IMPORTANT: Updated with new info from letterhead !!
-const COMPANY_PHONE_NUMBER = '+971 55 5508499'; // International format (from letterhead)
+const COMPANY_PHONE_NUMBER = '+971 06 5627670'; // International format (from letterhead)
 const COMPANY_EMAIL = 'knights.engg@gmail.com'; // (from letterhead)
 const COMPANY_ADDRESS = 'P.O. Box: 38003, Sajjah Industrial Area, Sharjah - U.A.E.'; // (from letterhead)
 // --- LOGO UPDATE ---
 // Using the full logo path as requested.
-const COMPANY_LOGO_URL = 'images/knights.png'; 
+const COMPANY_LOGO_URL = 'images/logo/knights.png'; 
 // --- END LOGO UPDATE ---
 const COMPANY_WHATSAPP_NUMBER = '971555508499'; // No '+' or '00'. Just country code + number.
 const SOCIAL_LINKS = {
@@ -68,7 +68,7 @@ const translations = {
       aboutButton: 'Learn More About Us',
       whyChooseUsTitle: 'Why Choose Us',
       whyChooseUsSubtitle: 'Our unshakeable commitment to excellence, safety, and client satisfaction sets us apart.',
-      whyChooseUsSafety: 'Safety First (HSE)',
+      whyChooseUsSafety: 'Safety First',
       whyChooseUsSafetyDesc: 'An uncompromising culture of safety that protects our people, clients, and assets.',
       whyChooseUsQuality: 'API & ASME Certified',
       whyChooseUsQualityDesc: 'We adhere to the highest international standards, ensuring durable and reliable results.',
