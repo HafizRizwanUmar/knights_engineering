@@ -20,7 +20,7 @@ import {
 // !! IMPORTANT: Updated with new info from letterhead !!
 const COMPANY_PHONE_NUMBER = '+971 06 5627670'; // International format (from letterhead)
 const COMPANY_EMAIL = 'knights.engg@gmail.com'; // (from letterhead)
-const COMPANY_ADDRESS = 'P.O. Box: 38003, Sajjah Industrial Area, Sharjah - U.A.E.'; // (from letterhead)
+const COMPANY_ADDRESS = 'P.O. Box:Yard No 2, Milehah Sharjah United Arab Emirates'; // (from letterhead)
 // --- LOGO UPDATE ---
 // Using the full logo path as requested.
 const COMPANY_LOGO_URL = 'images/logo/knights.png'; 
